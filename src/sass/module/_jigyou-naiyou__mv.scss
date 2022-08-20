@@ -1,0 +1,34 @@
+@use "global" as *;
+.jigyou-naiyou__mv {
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__mv-inner {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  background-image: url(/images/jigyou-naiyou-mv.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__mv-shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.2);
+  @include mq(md) {
+  }
+}

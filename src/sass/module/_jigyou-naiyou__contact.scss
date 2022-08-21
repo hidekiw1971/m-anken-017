@@ -1,0 +1,94 @@
+@use "global" as *;
+.jigyou-naiyou__contact-layout {
+  background: rgba(61, 61, 61, 1);
+  padding: rem(64) rem(20);
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__contact-title {
+  margin-bottom: rem(16);
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(25);
+  letter-spacing: rem(2);
+  line-height: 1.44;
+  position: relative;
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__contact-title > p {
+  text-align: center;
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__contact-title::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  content: "Contact";
+  display: block;
+  color: rgba(249, 248, 113, 0.27);
+  font-family: "Noto Serif JP", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(50);
+  letter-spacing: rem(2);
+  line-height: 1.44;
+  text-align: center;
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__contact-message {
+  margin-bottom: rem(40);
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(16);
+  letter-spacing: rem(2);
+  line-height: 1.4375;
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__inquiry {
+  border: solid 1px #fff;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(20);
+  letter-spacing: rem(2);
+  line-height: 1.45;
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__inquiry-layout {
+  position: relative;
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__inquiry-layout::before {
+  content: "";
+  display: block;
+  padding-top: 14.92%;
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__inquiry-layout p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  @include mq(md) {
+  }
+}

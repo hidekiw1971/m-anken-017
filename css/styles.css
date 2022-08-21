@@ -175,6 +175,105 @@ select::-ms-expand {
   display: none;
 }
 
+.jigyou-naiyou__contact-layout {
+  background: rgb(61, 61, 61);
+  padding: 64px 20px;
+  padding: 4rem 1.25rem;
+}
+.jigyou-naiyou__contact-title {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  line-height: 1.44;
+  position: relative;
+}
+.jigyou-naiyou__contact-title > p {
+  text-align: center;
+}
+.jigyou-naiyou__contact-title::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -90%);
+          transform: translate(-50%, -90%);
+  content: "Contact";
+  display: block;
+  color: rgba(249, 248, 113, .27);
+  font-family: "Noto Serif JP", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  font-size: 3.125rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  line-height: 1.44;
+  text-align: center;
+}
+.jigyou-naiyou__contact-message {
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  line-height: 1.4375;
+}
+.jigyou-naiyou__inquiry {
+  border: solid 1px #fff;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  line-height: 1.45;
+}
+.jigyou-naiyou__inquiry-layout {
+  position: relative;
+}
+.jigyou-naiyou__inquiry-layout::before {
+  content: "";
+  display: block;
+  padding-top: 14.92%;
+}
+.jigyou-naiyou__inquiry-layout p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.jigyou-naiyou__footer-copyright {
+  text-align: center;
+}
+.jigyou-naiyou__footer-list-title img {
+  position: relative;
+  width: 70px;
+  width: 4.375rem;
+}
+.jigyou-naiyou__footer-list-title a {
+  display: inline-block;
+}
+.jigyou-naiyou__footer-wrap {
+  text-align: center;
+}
 .jigyou-naiyou__kigyou-rinen-contents-layout {
   margin-bottom: 48px;
   margin-bottom: 3rem;
@@ -248,5 +347,162 @@ select::-ms-expand {
   width: 100%;
   height: 100%;
   background: rgba(17, 17, 17, .2);
+}
+.jigyou-naiyou__scroll-layout {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 45px;
+  width: 2.8125rem;
+  height: 45px;
+  height: 2.8125rem;
+  background: rgb(255, 255, 255);
+}
+.js-drawer-menu {
+  display: inline-block;
+  height: 100%;
+  position: absolute relative;
+  top: 0;
+  right: 0;
+  z-index: 5;
+}
+.js-drawer-menu-wrap {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  width: 1.5rem;
+  height: 100%;
+}
+.js-drawer-menu-wrap span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 24px;
+  width: 1.5rem;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+.js-drawer-menu-wrap span::before {
+  content: "";
+  display: block;
+  width: 24px;
+  width: 1.5rem;
+  height: 2px;
+  height: 0.125rem;
+  background: #fff;
+  position: absolute;
+  top: 8px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+.js-drawer-menu-wrap span::after {
+  content: "";
+  display: block;
+  width: 24px;
+  width: 1.5rem;
+  height: 2px;
+  height: 0.125rem;
+  background: #fff;
+  position: absolute;
+  top: -8px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+.js-drawer-menu-wrap__open span {
+  background: transparent;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+.js-drawer-menu-wrap__open span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+.js-drawer-menu-wrap__open span::after {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+.kigyou-naiyou__header-layout {
+  height: 50px;
+  height: 3.125rem;
+  padding: 0 20px;
+  padding: 0 1.25rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: rgb(17, 17, 17);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.kigyou-naiyou__header-title {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  width: 4.375rem;
+  z-index: 1;
+}
+.kigyou-naiyou__header-title::before {
+  content: "";
+  display: block;
+  padding-top: 71.4285%;
+}
+.kigyou-naiyou__header-title img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.sp-menu__layout {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(17, 17, 17);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+.sp-menu__layout-open {
+  left: 0;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+.sp-menu__wrap {
+  text-align: center;
+}
+.sp-menu__list {
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,42 @@
+@use "global" as *;
+.sp-menu {
+  @include mq(md) {
+  }
+}
+
+.sp-menu__layout {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(17, 17, 17, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.75s;
+  @include mq(md) {
+  }
+}
+
+.sp-menu__layout-open {
+  left: 0;
+  transition: 0.75s;
+  @include mq(md) {
+  }
+}
+
+.sp-menu__wrap {
+  text-align: center;
+  @include mq(md) {
+  }
+}
+
+.sp-menu__list {
+  margin-bottom: rem(32);
+  @include mq(md) {
+  }
+}

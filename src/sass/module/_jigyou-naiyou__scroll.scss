@@ -1,0 +1,17 @@
+@use "global" as *;
+.jigyou-naiyou__scroll {
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__scroll-layout {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: rem(45);
+  height: rem(45);
+  background: rgba(255, 255, 255, 1);
+  @include mq(md) {
+  }
+}

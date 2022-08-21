@@ -1,0 +1,82 @@
+@use "global" as *;
+.js-drawer-menu {
+  display: inline-block;
+  height: 100%;
+  position: absolute relative;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  @include mq(md) {
+  }
+}
+
+.js-drawer-menu-wrap {
+  display: inline-block;
+  position: relative;
+  width: rem(24);
+  height: 100%;
+  @include mq(md) {
+  }
+}
+
+.js-drawer-menu-wrap span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: rem(24);
+  height: 2px;
+  background: #fff;
+  transition: 0.75s;
+  @include mq(md) {
+  }
+}
+
+.js-drawer-menu-wrap span::before {
+  content: "";
+  display: block;
+  width: rem(24);
+  height: rem(2);
+  background: #fff;
+  position: absolute;
+  top: 8px;
+  transition: 0.75s;
+}
+
+.js-drawer-menu-wrap span::after {
+  content: "";
+  display: block;
+  width: rem(24);
+  height: rem(2);
+  background: #fff;
+  position: absolute;
+  top: -8px;
+  transition: 0.75s;
+}
+
+.js-drawer-menu-wrap__open span {
+  background: transparent;
+  transition: 0.75s;
+  @include mq(md) {
+  }
+}
+
+.js-drawer-menu-wrap__open span::before {
+  top: 0;
+  // background: #ff0;
+  transform: rotate(45deg);
+  // transform-origin: right bottom;
+  transition: 0.75s;
+  @include mq(md) {
+  }
+}
+
+.js-drawer-menu-wrap__open span::after {
+  top: 0;
+  // background: #0ff;
+  transform: rotate(-45deg);
+  // transform-origin: 100%;
+  transition: 0.75s;
+  @include mq(md) {
+  }
+}

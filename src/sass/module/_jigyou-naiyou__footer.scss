@@ -1,0 +1,25 @@
+@use "global" as *;
+.jigyou-naiyou__footer-copyright {
+  text-align: center;
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__footer-list-title img {
+  position: relative;
+  width: rem(70);
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__footer-list-title a {
+  display: inline-block;
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__footer-wrap {
+  text-align: center;
+  @include mq {
+  }
+}

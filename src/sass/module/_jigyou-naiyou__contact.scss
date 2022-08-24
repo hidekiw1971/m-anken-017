@@ -1,7 +1,9 @@
 @use "global" as *;
 .jigyou-naiyou__contact-layout {
+  text-align: center;
   background: rgba(61, 61, 61, 1);
   padding: rem(64) rem(20);
+  margin-bottom: rem(48);
   @include mq(md) {
   }
 }

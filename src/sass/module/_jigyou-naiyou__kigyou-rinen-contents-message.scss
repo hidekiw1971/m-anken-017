@@ -1,0 +1,6 @@
+@use "global" as *;
+.jigyou-naiyou__kigyou-rinen-contents-message {
+  text-align: left;
+  @include mq(md) {
+  }
+}

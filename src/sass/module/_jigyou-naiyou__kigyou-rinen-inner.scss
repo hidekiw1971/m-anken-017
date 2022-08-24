@@ -1,0 +1,7 @@
+@use "global" as *;
+.jigyou-naiyou__kigyou-rinen-inner {
+  display: inline-block;
+  max-width: rem(375);
+  @include mq(md) {
+  }
+}

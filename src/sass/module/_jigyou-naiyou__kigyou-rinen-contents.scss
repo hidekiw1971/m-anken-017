@@ -10,6 +10,12 @@
   }
 }
 
+.jigyou-naiyou__kigyou-rinen-contents-layout:last-child {
+  margin-bottom: rem(0);
+  @include mq(md) {
+  }
+}
+
 .jigyou-naiyou__kigyou-rinen-contents-inner {
   @include mq(md) {
   }

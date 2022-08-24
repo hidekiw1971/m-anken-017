@@ -1,0 +1,7 @@
+@use "global" as *;
+.jigyou-naiyou__footer-wrap {
+  text-align: center;
+  margin-bottom: rem(32);
+  @include mq {
+  }
+}

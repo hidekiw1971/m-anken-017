@@ -1,0 +1,12 @@
+@use "global" as *;
+.jigyou-naiyou__footer-list {
+  margin-bottom: rem(8);
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__footer-list:last-child {
+  margin-bottom: rem(0);
+  @include mq(md) {
+  }
+}

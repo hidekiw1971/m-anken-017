@@ -1,0 +1,19 @@
+@use "global" as *;
+.jigyou-naiyou__breadcrumb-list {
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__breadcrumb-list::after {
+  content: ">";
+  margin: 0 rem(5);
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__breadcrumb-list:last-child::after {
+  content: "";
+  margin: 0;
+  @include mq(md) {
+  }
+}

@@ -4,14 +4,22 @@ jQuery(function ($) {
   var topBtn = $(".pagetop");
   topBtn.hide();
 
+  // scroll位置情報取得
+  $(window).scroll(function () {
+    var test = $(this).scrollTop();
+    console.log(test);
+  });
+
   // ボタンの表示設定
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 70) {
+    if ($(this).scrollTop() > 500) {
+      $(".js-kigyou-naiyou__header").css("background", "rgba(17, 17, 17, 1)");
       // 指定px以上のスクロールでボタンを表示
-      topBtn.fadeIn();
+      // topBtn.fadeIn();
     } else {
+      $(".js-kigyou-naiyou__header").css("background", "rgba(17, 17, 17, 0.5)");
       // 画面が指定pxより上ならボタンを非表示
-      topBtn.fadeOut();
+      // topBtn.fadeOut();
     }
   });
 

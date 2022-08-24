@@ -1,0 +1,6 @@
+@use "global" as *;
+.jigyou-naiyou__mv-layout {
+  margin-bottom: rem(14);
+  @include mq(md) {
+  }
+}

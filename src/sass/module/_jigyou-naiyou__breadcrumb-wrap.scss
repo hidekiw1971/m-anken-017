@@ -1,0 +1,8 @@
+@use "global" as *;
+.jigyou-naiyou__breadcrumb-wrap {
+  display: flex;
+  max-width: rem(335);
+  width: 100%;
+  @include mq(md) {
+  }
+}

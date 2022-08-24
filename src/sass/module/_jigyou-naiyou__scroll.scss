@@ -12,6 +12,38 @@
   width: rem(45);
   height: rem(45);
   background: rgba(255, 255, 255, 1);
+  margin-right: rem(21);
+  margin-bottom: rem(41);
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__scroll-layout::before {
+  content: "";
+  display: block;
+  width: rem(20);
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  // transform-origin: 50% 50%;
+  @include mq(md) {
+  }
+}
+
+.jigyou-naiyou__scroll-layout::after {
+  content: "";
+  display: block;
+  width: rem(20);
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  // transform-origin: 50% 50%;
   @include mq(md) {
   }
 }

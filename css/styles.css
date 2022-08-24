@@ -175,6 +175,35 @@ select::-ms-expand {
   display: none;
 }
 
+.jigyou-naiyou__breadcrumb-layout {
+  margin: 0 20px;
+  margin: 0 1.25rem;
+  margin-bottom: 85px;
+  margin-bottom: 5.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.jigyou-naiyou__breadcrumb-list::after {
+  content: ">";
+  margin: 0 5px;
+  margin: 0 0.3125rem;
+}
+.jigyou-naiyou__breadcrumb-list:last-child::after {
+  content: "";
+  margin: 0;
+}
+.jigyou-naiyou__breadcrumb-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 335px;
+  max-width: 20.9375rem;
+  width: 100%;
+}
 .jigyou-naiyou__contact-inner {
   display: inline-block;
   max-width: 375px;
@@ -369,6 +398,10 @@ select::-ms-expand {
   line-height: 1.4375;
   text-align: left;
 }
+.jigyou-naiyou__mv-layout {
+  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
+}
 .jigyou-naiyou__mv-inner {
   position: relative;
   width: 100vw;
@@ -408,6 +441,36 @@ select::-ms-expand {
   height: 45px;
   height: 2.8125rem;
   background: rgb(255, 255, 255);
+  margin-right: 21px;
+  margin-right: 1.3125rem;
+  margin-bottom: 41px;
+  margin-bottom: 2.5625rem;
+}
+.jigyou-naiyou__scroll-layout::before {
+  content: "";
+  display: block;
+  width: 20px;
+  width: 1.25rem;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.jigyou-naiyou__scroll-layout::after {
+  content: "";
+  display: block;
+  width: 20px;
+  width: 1.25rem;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
 }
 .js-drawer-menu {
   display: inline-block;
@@ -494,7 +557,7 @@ select::-ms-expand {
   left: 0;
   right: 0;
   z-index: 1;
-  background: rgb(17, 17, 17);
+  background: rgba(17, 17, 17, .5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

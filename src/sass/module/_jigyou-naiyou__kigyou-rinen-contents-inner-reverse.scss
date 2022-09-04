@@ -1,0 +1,6 @@
+@use "global" as *;
+.jigyou-naiyou__kigyou-rinen-contents-inner-reverse {
+  @include mq(md) {
+    flex-direction: row-reverse;
+  }
+}

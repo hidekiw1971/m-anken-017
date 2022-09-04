@@ -204,6 +204,12 @@ select::-ms-expand {
   max-width: 20.9375rem;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__breadcrumb-wrap {
+    max-width: 68.125rem;
+  }
+}
+
 .jigyou-naiyou__contact-inner {
   display: inline-block;
   max-width: 375px;
@@ -325,9 +331,35 @@ select::-ms-expand {
 .jigyou-naiyou__footer-list-title a {
   display: inline-block;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__kigyou-rinen-contents-inner-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
 .jigyou-naiyou__kigyou-rinen-contents-message {
   text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.4375;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__kigyou-rinen-contents-message {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2.1875;
+    letter-spacing: 0.03125rem;
+  }
+}
+
 .jigyou-naiyou__kigyou-rinen-contents-layout {
   margin-bottom: 48px;
   margin-bottom: 3rem;
@@ -336,11 +368,45 @@ select::-ms-expand {
   margin-bottom: 0px;
   margin-bottom: 0rem;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__kigyou-rinen-contents-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 1.25rem;
+    width: 68.125rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__kigyou-rinen-contents-text-wrap {
+    width: 31.875rem;
+  }
+}
+
 .jigyou-naiyou__kigyou-rinen-contents-text-wrap > .jigyou-naiyou__kigyou-rinen-contents-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  line-height: 1.45;
   text-align: center;
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__kigyou-rinen-contents-text-wrap > .jigyou-naiyou__kigyou-rinen-contents-title {
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5625rem;
+    letter-spacing: 0.03125rem;
+    line-height: 0.64;
+  }
+}
+
 .jigyou-naiyou__kigyou-rinen-contents-image {
   position: relative;
   overflow: hidden;
@@ -348,11 +414,23 @@ select::-ms-expand {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__kigyou-rinen-contents-image {
+    width: 34.375rem;
+  }
+}
+
 .jigyou-naiyou__kigyou-rinen-contents-image::before {
   content: "";
   display: block;
   padding-top: 67%;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__kigyou-rinen-contents-image::before {
+    padding-top: 66.7%;
+  }
+}
+
 .jigyou-naiyou__kigyou-rinen-contents-image img {
   position: absolute;
   top: 50%;
@@ -365,17 +443,31 @@ select::-ms-expand {
 .jigyou-naiyou__kigyou-rinen-contents-text-wrap {
   margin: 0 20px;
   margin: 0 1.25rem;
+  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 .jigyou-naiyou__kigyou-rinen-inner {
   display: inline-block;
   max-width: 375px;
   max-width: 23.4375rem;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__kigyou-rinen-inner {
+    max-width: 68.125rem;
+  }
+}
+
 .jigyou-naiyou__kigyou-rinen-layout {
   text-align: center;
   margin-bottom: 120px;
   margin-bottom: 7.5rem;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__kigyou-rinen-wrap-top-layout {
+    max-width: 35.5rem;
+  }
+}
+
 .jigyou-naiyou__kigyou-rinen-wrap-top {
   margin: 0 auto;
   margin-bottom: 80px;
@@ -384,10 +476,24 @@ select::-ms-expand {
   padding: 0 1.25rem;
 }
 .jigyou-naiyou__kigyou-rinen-wrap-top > h3 {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  line-height: 1.75;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__kigyou-rinen-wrap-top > h3 {
+    font-size: 1.5625rem;
+  }
+}
+
 .jigyou-naiyou__kigyou-rinen-wrap-top > p {
   font-style: normal;
   font-weight: 400;
@@ -401,11 +507,19 @@ select::-ms-expand {
 .jigyou-naiyou__mv-layout {
   margin-bottom: 14px;
   margin-bottom: 0.875rem;
+  overflow: hidden;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__mv-layout {
+    height: 23.125rem;
+  }
+}
+
 .jigyou-naiyou__mv-inner {
   position: relative;
   width: 100vw;
-  height: 60vh;
+  height: 425px;
+  height: 26.5625rem;
   background-image: url(/images/jigyou-naiyou-mv.png);
   background-size: cover;
   background-position: center center;

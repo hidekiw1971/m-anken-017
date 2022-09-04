@@ -1,0 +1,6 @@
+@use "global" as *;
+.jigyou-naiyou__kigyou-rinen-wrap-top-layout {
+  @include mq(md) {
+    max-width: rem(568);
+  }
+}

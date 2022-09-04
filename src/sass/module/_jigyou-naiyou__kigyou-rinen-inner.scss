@@ -3,5 +3,6 @@
   display: inline-block;
   max-width: rem(375);
   @include mq(md) {
+    max-width: rem(1090);
   }
 }

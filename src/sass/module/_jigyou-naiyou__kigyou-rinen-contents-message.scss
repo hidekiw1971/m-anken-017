@@ -1,6 +1,16 @@
 @use "global" as *;
 .jigyou-naiyou__kigyou-rinen-contents-message {
   text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: 1.4375;
+  letter-spacing: rem(2);
   @include mq(md) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: 2.1875;
+    letter-spacing: rem(0.5);
   }
 }

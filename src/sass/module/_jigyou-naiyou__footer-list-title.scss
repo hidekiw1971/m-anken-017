@@ -1,0 +1,6 @@
+@use "global" as *;
+.jigyou-naiyou__footer-list-title {
+  @include mq(md) {
+    margin-right: auto;
+  }
+}

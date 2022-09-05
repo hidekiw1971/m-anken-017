@@ -5,6 +5,7 @@
   padding: rem(64) rem(20);
   margin-bottom: rem(48);
   @include mq(md) {
+    padding: rem(148) rem(20);
   }
 }
 
@@ -17,6 +18,10 @@
   line-height: 1.44;
   position: relative;
   @include mq(md) {
+    font-size: rem(30);
+    line-height: 1.166;
+    letter-spacing: rem(2);
+    margin-bottom: rem(24);
   }
 }
 
@@ -42,6 +47,9 @@
   line-height: 1.44;
   text-align: center;
   @include mq(md) {
+    font-size: rem(110);
+    line-height: 1.436;
+    transform: translate(-127%, -73%);
   }
 }
 
@@ -53,6 +61,8 @@
   letter-spacing: rem(2);
   line-height: 1.4375;
   @include mq(md) {
+    line-height: 2.1875;
+    margin-bottom: rem(49);
   }
 }
 
@@ -70,7 +80,10 @@
 
 .jigyou-naiyou__inquiry-layout {
   position: relative;
+  width: rem(335);
+  margin: 0 auto;
   @include mq(md) {
+    width: rem(360);
   }
 }
 
@@ -79,6 +92,7 @@
   display: block;
   padding-top: 14.92%;
   @include mq(md) {
+    padding-top: 16.66%;
   }
 }
 

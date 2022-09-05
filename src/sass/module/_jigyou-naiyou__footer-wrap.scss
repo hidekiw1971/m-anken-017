@@ -2,6 +2,7 @@
 .jigyou-naiyou__footer-wrap {
   text-align: center;
   margin-bottom: rem(32);
-  @include mq {
+  @include mq(md) {
+    display: flex;
   }
 }

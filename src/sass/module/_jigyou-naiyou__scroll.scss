@@ -1,10 +1,10 @@
 @use "global" as *;
-.jigyou-naiyou__scroll {
+.js-jigyou-naiyou__scroll {
   @include mq(md) {
   }
 }
 
-.jigyou-naiyou__scroll-layout {
+.js-jigyou-naiyou__scroll-layout {
   display: block;
   position: fixed;
   bottom: 0;
@@ -18,7 +18,7 @@
   }
 }
 
-.jigyou-naiyou__scroll-layout::before {
+.js-jigyou-naiyou__scroll-layout::before {
   content: "";
   display: block;
   width: rem(20);
@@ -33,7 +33,7 @@
   }
 }
 
-.jigyou-naiyou__scroll-layout::after {
+.js-jigyou-naiyou__scroll-layout::after {
   content: "";
   display: block;
   width: rem(20);

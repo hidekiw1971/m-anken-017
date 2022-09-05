@@ -1,0 +1,6 @@
+@use "global" as *;
+.jigyou-naiyou__footer-list-leftspace {
+  @include mq(md) {
+    margin-left: rem(32);
+  }
+}

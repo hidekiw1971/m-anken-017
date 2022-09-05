@@ -1,0 +1,6 @@
+@use "global" as *;
+.jigyou-naiyou__kigyou-rinen-contents-image.jigyou-naiyou__kigyou-rinen-contents-image-space-left {
+  @include mq(md) {
+    margin-left: rem(30);
+  }
+}

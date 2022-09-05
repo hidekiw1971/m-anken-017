@@ -1,8 +1,19 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
 
-  var topBtn = $(".pagetop");
-  topBtn.hide();
+  var topBtn = $(".js-jigyou-naiyou__scroll");
+  // topBtn.hide();
+  // ボタンをクリックしたらスクロールして上に戻る
+  topBtn.click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      300,
+      "swing"
+    );
+    return false;
+  });
 
   // scroll位置情報取得
   $(window).scroll(function () {
@@ -10,7 +21,7 @@ jQuery(function ($) {
     console.log(test);
   });
 
-  // ボタンの表示設定
+  // ボタンの表示設定（header）
   $(window).scroll(function () {
     if ($(this).scrollTop() > 500) {
       $(".js-kigyou-naiyou__header").css("background", "rgba(17, 17, 17, 1)");
@@ -23,16 +34,17 @@ jQuery(function ($) {
     }
   });
 
-  // ボタンをクリックしたらスクロールして上に戻る
-  topBtn.click(function () {
-    $("body,html").animate(
-      {
-        scrollTop: 0,
-      },
-      300,
-      "swing"
-    );
-    return false;
+  // ボタンの表示設定（js-jigyou-naiyou__scroll）
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      $(".js-jigyou-naiyou__scroll").css("display", "block");
+      // 指定px以上のスクロールでボタンを表示
+      // topBtn.fadeIn();
+    } else {
+      $(".js-jigyou-naiyou__scroll").css("display", "none");
+      // 画面が指定pxより上ならボタンを非表示
+      // topBtn.fadeOut();
+    }
   });
 
   //ドロワーメニュー

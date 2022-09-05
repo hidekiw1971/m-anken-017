@@ -212,8 +212,6 @@ select::-ms-expand {
 
 .jigyou-naiyou__contact-inner {
   display: inline-block;
-  max-width: 375px;
-  max-width: 23.4375rem;
 }
 .jigyou-naiyou__contact-layout {
   text-align: center;
@@ -223,6 +221,12 @@ select::-ms-expand {
   margin-bottom: 48px;
   margin-bottom: 3rem;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__contact-layout {
+    padding: 9.25rem 1.25rem;
+  }
+}
+
 .jigyou-naiyou__contact-title {
   margin-bottom: 16px;
   margin-bottom: 1rem;
@@ -235,6 +239,15 @@ select::-ms-expand {
   line-height: 1.44;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__contact-title {
+    font-size: 1.875rem;
+    line-height: 1.166;
+    letter-spacing: 0.125rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 .jigyou-naiyou__contact-title > p {
   text-align: center;
 }
@@ -257,6 +270,15 @@ select::-ms-expand {
   line-height: 1.44;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__contact-title::before {
+    font-size: 6.875rem;
+    line-height: 1.436;
+    -webkit-transform: translate(-127%, -73%);
+            transform: translate(-127%, -73%);
+  }
+}
+
 .jigyou-naiyou__contact-message {
   margin-bottom: 40px;
   margin-bottom: 2.5rem;
@@ -268,6 +290,13 @@ select::-ms-expand {
   letter-spacing: 0.125rem;
   line-height: 1.4375;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__contact-message {
+    line-height: 2.1875;
+    margin-bottom: 3.0625rem;
+  }
+}
+
 .jigyou-naiyou__inquiry {
   border: solid 1px #fff;
   text-align: center;
@@ -281,12 +310,27 @@ select::-ms-expand {
 }
 .jigyou-naiyou__inquiry-layout {
   position: relative;
+  width: 335px;
+  width: 20.9375rem;
+  margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__inquiry-layout {
+    width: 22.5rem;
+  }
+}
+
 .jigyou-naiyou__inquiry-layout::before {
   content: "";
   display: block;
   padding-top: 14.92%;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__inquiry-layout::before {
+    padding-top: 16.66%;
+  }
+}
+
 .jigyou-naiyou__inquiry-layout p {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,6 +351,25 @@ select::-ms-expand {
   margin-bottom: 48px;
   margin-bottom: 3rem;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__footer-layout {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__footer-list-leftspace {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__footer-list-title {
+    margin-right: auto;
+  }
+}
+
 .jigyou-naiyou__footer-list {
   margin-bottom: 8px;
   margin-bottom: 0.5rem;
@@ -320,6 +383,14 @@ select::-ms-expand {
   margin-bottom: 32px;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__footer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .jigyou-naiyou__footer-copyright {
   text-align: center;
 }
@@ -331,6 +402,18 @@ select::-ms-expand {
 .jigyou-naiyou__footer-list-title a {
   display: inline-block;
 }
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__kigyou-rinen-contents-image.jigyou-naiyou__kigyou-rinen-contents-image-space-left {
+    margin-left: 1.875rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .jigyou-naiyou__kigyou-rinen-contents-image.jigyou-naiyou__kigyou-rinen-contents-image-space-right {
+    margin-right: 1.875rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .jigyou-naiyou__kigyou-rinen-contents-inner-reverse {
     -webkit-box-orient: horizontal;
@@ -374,7 +457,7 @@ select::-ms-expand {
     display: -ms-flexbox;
     display: flex;
     margin: 0 1.25rem;
-    width: 68.125rem;
+    max-width: 68.125rem;
   }
 }
 
@@ -416,7 +499,8 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .jigyou-naiyou__kigyou-rinen-contents-image {
-    width: 34.375rem;
+    margin: 0;
+    width: 33.5625rem;
   }
 }
 
@@ -441,8 +525,8 @@ select::-ms-expand {
      object-fit: cover;
 }
 .jigyou-naiyou__kigyou-rinen-contents-text-wrap {
-  margin: 0 20px;
-  margin: 0 1.25rem;
+  margin: 0 0px;
+  margin: 0 0rem;
   margin-top: 20px;
   margin-top: 1.25rem;
 }
@@ -545,7 +629,7 @@ select::-ms-expand {
   height: 100%;
   background: rgba(17, 17, 17, .2);
 }
-.jigyou-naiyou__scroll-layout {
+.js-jigyou-naiyou__scroll-layout {
   display: block;
   position: fixed;
   bottom: 0;
@@ -560,7 +644,7 @@ select::-ms-expand {
   margin-bottom: 41px;
   margin-bottom: 2.5625rem;
 }
-.jigyou-naiyou__scroll-layout::before {
+.js-jigyou-naiyou__scroll-layout::before {
   content: "";
   display: block;
   width: 20px;
@@ -573,7 +657,7 @@ select::-ms-expand {
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
 }
-.jigyou-naiyou__scroll-layout::after {
+.js-jigyou-naiyou__scroll-layout::after {
   content: "";
   display: block;
   width: 20px;

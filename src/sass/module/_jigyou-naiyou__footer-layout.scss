@@ -2,5 +2,7 @@
 .jigyou-naiyou__footer-layout {
   margin-bottom: rem(48);
   @include mq(md) {
+    margin-right: rem(32);
+    margin-left: rem(32);
   }
 }

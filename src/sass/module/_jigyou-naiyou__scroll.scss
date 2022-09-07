@@ -14,6 +14,7 @@
   background: rgba(255, 255, 255, 1);
   margin-right: rem(21);
   margin-bottom: rem(41);
+  overflow: hidden;
   @include mq(md) {
   }
 }
@@ -29,6 +30,8 @@
   left: 65%;
   transform: translate(-50%, -50%) rotate(45deg);
   // transform-origin: 50% 50%;
+  // transition: 0.75s;
+  // transition: 1s all linear;
   @include mq(md) {
   }
 }
@@ -44,6 +47,53 @@
   left: 35%;
   transform: translate(-50%, -50%) rotate(-45deg);
   // transform-origin: 50% 50%;
+  // transition: 0.75s;
+  // transition: 1s all linear;
+  @include mq(md) {
+  }
+}
+
+.js-jigyou-naiyou__scroll-layout:hover:before,
+.js-jigyou-naiyou__scroll-layout:hover:after {
+  background: #fff;
+  position: absolute;
+  z-index: 5;
+  // transition: 0.75s;
+  transition: 1s all linear;
+  @include mq(md) {
+  }
+}
+
+.js-jigyou-naiyou__scroll-layout span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  @include mq(md) {
+  }
+}
+
+.js-jigyou-naiyou__scroll-layout span::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  transform: none;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  // transition: 0.75s;
+  transition: 1s all linear;
+  @include mq(md) {
+  }
+}
+
+.js-jigyou-naiyou__scroll-layout span:hover:before {
+  top: 0;
+  transition: 1s all linear;
+  // transition: 0.75s;
   @include mq(md) {
   }
 }

@@ -313,6 +313,7 @@ select::-ms-expand {
   width: 335px;
   width: 20.9375rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .jigyou-naiyou__inquiry-layout {
@@ -346,6 +347,35 @@ select::-ms-expand {
   right: 0;
   bottom: 0;
   left: 0;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+.jigyou-naiyou__inquiry-layout::after {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+.jigyou-naiyou__inquiry-layout:hover:after {
+  left: 0;
+  color: #333;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+.jigyou-naiyou__inquiry-layout:hover p {
+  color: #333;
+  position: absolute;
+  z-index: 5;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 .jigyou-naiyou__footer-layout {
   margin-bottom: 48px;
@@ -443,6 +473,12 @@ select::-ms-expand {
   }
 }
 
+.jigyou-naiyou__kigyou-rinen-contents-text-wrap-space {
+  margin: 0 20px;
+  margin: 0 1.25rem;
+  margin-top: 20px;
+  margin-top: 1.25rem;
+}
 .jigyou-naiyou__kigyou-rinen-contents-layout {
   margin-bottom: 48px;
   margin-bottom: 3rem;
@@ -523,12 +559,6 @@ select::-ms-expand {
           transform: translate(-50%, -50%);
   -o-object-fit: cover;
      object-fit: cover;
-}
-.jigyou-naiyou__kigyou-rinen-contents-text-wrap {
-  margin: 0 0px;
-  margin: 0 0rem;
-  margin-top: 20px;
-  margin-top: 1.25rem;
 }
 .jigyou-naiyou__kigyou-rinen-inner {
   display: inline-block;
@@ -643,6 +673,7 @@ select::-ms-expand {
   margin-right: 1.3125rem;
   margin-bottom: 41px;
   margin-bottom: 2.5625rem;
+  overflow: hidden;
 }
 .js-jigyou-naiyou__scroll-layout::before {
   content: "";
@@ -669,6 +700,40 @@ select::-ms-expand {
   left: 35%;
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
+}
+.js-jigyou-naiyou__scroll-layout:hover:before,
+.js-jigyou-naiyou__scroll-layout:hover:after {
+  background: #fff;
+  position: absolute;
+  z-index: 5;
+  -webkit-transition: 1s all linear;
+  transition: 1s all linear;
+}
+.js-jigyou-naiyou__scroll-layout span {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.js-jigyou-naiyou__scroll-layout span::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  -webkit-transform: none;
+          transform: none;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: 1s all linear;
+  transition: 1s all linear;
+}
+.js-jigyou-naiyou__scroll-layout span:hover:before {
+  top: 0;
+  -webkit-transition: 1s all linear;
+  transition: 1s all linear;
 }
 .js-drawer-menu {
   display: inline-block;
